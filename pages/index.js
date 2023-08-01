@@ -95,7 +95,7 @@ export default function Home() {
                 {arr.slice(0, 10).map((arr, index) => (
                   <div>
                     <li className="font-bold" key={index}>{index+1}. {arr}</li>
-                    <li className='pl-3'>{dates[index]}</li>
+                    <li className='pl-3' key={index}>{dates[index]}</li>
                   </div>
                 ))}
               </ul>
