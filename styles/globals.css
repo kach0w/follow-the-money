@@ -11,13 +11,13 @@ body {
 }
 
 h1 {
-  color: #85bb65;
+  color: #3b82f6;
   font-size: 64px;
   font-weight: 800;
 }
 
 h2 {
-  color: #85bb65;
+  color: #3b82f6;
   font-size: 32px;
   font-weight: 800;
 }
@@ -51,5 +51,9 @@ p {
  }
 
   b { 
-    color: #85bb65;
+    color: #3b82f6;
+  }
+
+  #card {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
   }
