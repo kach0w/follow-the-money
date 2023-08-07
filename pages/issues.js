@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Navbar } from '../components/Navbar'
 
 export default function issues() {
+
   return (
     <div>
       <Head>
@@ -17,87 +18,24 @@ export default function issues() {
             <br></br>
           </div>
           <h1>The Issues</h1>
-          <div className='grid grid-cols-3 absolute mt-[15rem] w-[69rem]'>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Artificial Intelligence</h2> 
+          <div className=''>
+            <div className='float-right text-[5rem] text-[900]'>
+              <a href="mailto:karsab343@gmail.com">+</a>
+            </div>
+          </div>
+          <div className='grid grid-cols-3 absolute mt-[10rem] w-[69rem]'>
+            <div className="w-[20rem] rounded-md mb-5 border-2 flex-col text-center content-center">
+              <div id="card" className='p-6 rounded-t-md'>
+                <h2 className='text-2xl text-[white] align-middle'>Artificial Intelligence</h2> 
               </div>
-              <div className='rounded-b-md bg-[white]'>
+              <div className='rounded-b-lg p-6 bg-[#ffffff]'>
                   <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
+                      <a className="font-normal text-[1.3rem]" href="/posts?docname=ai">View the posts</a> 
                   </div>
               </div>
             </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Immigration</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>The Environment</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Education</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Military</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Economy</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Guns</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
-            <div className="w-[20rem] mb-5 border-2 rounded-md flex-col text-center content-center">
-              <div id="card" className='p-6 text-[#c2c2c2]'>
-                <h2 className='text-2xl text-[#222] align-middle'>Democracy</h2> 
-              </div>
-              <div className='rounded-b-md bg-[white]'>
-                  <div className='hover:underline p-6 text-[#3b82f6]'>
-                  <a className="font-normal text-[1.5rem]" href="">posts</a> 
-                  </div>
-              </div>
-            </div>
+            
+            
           </div>
           
           

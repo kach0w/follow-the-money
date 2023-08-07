@@ -28,7 +28,7 @@ export default function Home() {
   }
   useEffect(() => {
     async function getPosts(){
-      const commentsRef = db.collection('followthemoney');
+      const commentsRef = db.collection('followthemoney').doc('ai').collection('posts');
       const snapshot = await commentsRef.get();
       const posts = snapshot.docs.map((doc) => ({
         id: doc.id,
@@ -76,12 +76,12 @@ export default function Home() {
           <div className='absolute inset-y-0 right-0 w-[80rem] mx-auto' >
             {/* latest post */}
             <div className='mt-20 w-[15rem] p-6 text-left sm:w-[25rem] rounded-md shadow-[0_1px_4px_rgba(0,0,0,0.30)] mx-auto p-3 mb-[3vh] text-[0.5rem] sm:text-base'>
-                <h4 className='text-[#3b82f6]'>Latest Posts in #ai</h4>
+                <h4 className='text-[#3b82f6]'>Latest Post in #ai</h4>
                 <ul className='pt-2'>
-                  {posts.map((post) => (
+                  {posts.slice(posts.length-1, posts.length).map((post) => (
                     <li key={post.id} className='text-[0.7rem]'>
                       <p className='text-[0.8rem]'>{post.content}</p>
-                      <b><p className='text-[0.8rem] font-bold'> - @{post.author}</p></b>
+                      <b><p className='text-[0.8rem] font-bold'>by @{post.author}</p></b>
                     </li>
                   ))}
                 </ul>
@@ -91,11 +91,16 @@ export default function Home() {
                 <h4 className='text-[#3b82f6]'>Latest Independent Expenditures</h4>
                 <button className="p-2 hover:underline" onClick={fetchIndependentExpenditures}>Click for latest list (Note: Latest 2022)</button>
                 <ul className='text-[0.8rem] text-[#383838]'>
+                  
                   {arr.slice(0, 10).map((arr, index) => (
+                    arr ? (
                     <div>
                       <li className="font-bold" key={index}>{index+1}. {arr}</li>
                       <li className='pl-3' key={index}>{dates[index]}</li>
                     </div>
+                    ) : (
+                      <p>Loading</p>
+                    )
                   ))}
                 </ul> 
 
